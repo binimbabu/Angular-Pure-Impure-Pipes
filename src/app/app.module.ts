@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PublicPostsPipe } from './pipes/public-posts.pipe';
+import { ImpurePipe } from './pipes/impure.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PublicPostsPipe,
+    ImpurePipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
